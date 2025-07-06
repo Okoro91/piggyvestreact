@@ -9,7 +9,6 @@ import Resources from "./pages/Resources";
 import Piggybank from "./pages/Save/Piggybank";
 import Safelock from "./pages/Save/Safelock";
 import TargetSavings from "./pages/Save/TargetSavings";
-import FlexNaira from "./pages/save/FlexNaira";
 import FlexDollar from "./pages/Save/FlexDollar";
 import HouseMoney from "./pages/Save/HouseMoney";
 import Blog from "./pages/Resources/Blog";
@@ -19,6 +18,7 @@ import Calculator from "./pages/Resources/Calculator";
 import Newsletter from "./pages/Resources/Newsletter";
 import Ebook from "./pages/Resources/Ebook";
 import Footer from "./components/Footer";
+import Naira from "./pages/Save/Naira";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route path="piggybank" element={<Piggybank />} />
           <Route path="safelock" element={<Safelock />} />
           <Route path="target-savings" element={<TargetSavings />} />
-          <Route path="flexnaira" element={<FlexNaira />} />
+          <Route path="naira" element={<Naira />} />
           <Route path="house-money" element={<HouseMoney />} />
           <Route path="flexdollar" element={<FlexDollar />} />
         </Route>
