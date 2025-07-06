@@ -10,7 +10,7 @@ const Navbar = () => {
   const [saveOpen, setSaveOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   return (
-    <nav className="flex flex-col p-6 pt-15 space-y-6 lg:flex-row lg:p-0 lg:space-y-0 items-center lg:justify-between">
+    <nav className="flex flex-col p-6 pt-15 space-y-6 lg:flex-row lg:p-0 lg:space-y-0 items-center lg:justify-between bg-white">
       <ul className="space-x-6 flex flex-col lg:flex-row items-center font-semibold gap-8 lg:space-x-0 lg:gap-4">
         <li className="relative">
           <NavLink

@@ -18,6 +18,7 @@ import Comics from "./pages/Resources/Comics";
 import Calculator from "./pages/Resources/Calculator";
 import Newsletter from "./pages/Resources/Newsletter";
 import Ebook from "./pages/Resources/Ebook";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="ebook" element={<Ebook />} />
         </Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }
