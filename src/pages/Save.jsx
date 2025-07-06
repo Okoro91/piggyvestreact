@@ -1,11 +1,8 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 const Save = () => {
-  return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold">This is the Save page</h1>
-    </div>
-  );
+  return <Outlet />;
 };
 
 export default Save;

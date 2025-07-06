@@ -7,7 +7,6 @@ import SaveNav from "./SaveNav";
 import ResNav from "./ResNav";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [saveOpen, setSaveOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   return (
