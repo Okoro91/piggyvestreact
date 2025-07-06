@@ -3,9 +3,9 @@ import logo from "../assets/logo-grey.svg";
 import comply from "../assets/compliance.avif";
 import facebook from "../assets/facebook.svg";
 import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
 import tiktok from "../assets/tiktok.svg";
 import youtube from "../assets/youtube.svg";
+import insta from "../assets/insta.svg";
 
 const Footer = () => {
   return (
@@ -155,7 +155,7 @@ const Footer = () => {
                 rel="noreferrer noopener"
                 href="https://www.instagram.com/piggybankng/"
               >
-                <img src={instagram} alt="Instagram" className="w-6 h-6" />
+                <img src={insta} alt="Instagram" className="w-6 h-6" />
               </a>
             </li>
             <li>
