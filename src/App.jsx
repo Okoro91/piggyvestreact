@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./pages/Home";
 import Save from "./pages/Save";
 import Invest from "./pages/Invest";
 import Stories from "./pages/Stories";
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/home" element={<Home />} />
         <Route path="/save" element={<Save />} />
         <Route path="/invest" element={<Invest />} />
         <Route path="/stories" element={<Stories />} />
