@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md py-4 px-6 flex  justify-between w-full lg:justify-start">
-      <div className="flex items-center mr-5 justify-between ">
+    <header className="fixed bg-white shadow-md py-4 px-6 flex  justify-between w-full lg:justify-start z-1000">
+      <div className="flex items-center mr-5 justify-between">
         <Link to="/home">
           <img src="/logo.svg" alt="logo" />
         </Link>

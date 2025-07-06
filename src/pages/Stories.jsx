@@ -7,7 +7,6 @@ const Stories = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Function to fetch products from the API
     const fetchProducts = async () => {
       try {
         const response = await fetch("https://fakestoreapi.com/products");
@@ -15,18 +14,17 @@ const Stories = () => {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        setProducts(data); // Set products in state
+        setProducts(data);
       } catch (err) {
-        setError(err.message); // Set error message
+        setError(err.message);
       } finally {
-        setLoading(false); // Set loading to false regardless of success or failure
+        setLoading(false);
       }
     };
 
-    fetchProducts(); // Call the fetch function
-  }, []); // Empty dependency array means this effect runs once on mount
+    fetchProducts();
+  }, []);
 
-  // --- Render Logic ---
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100 font-inter">
@@ -58,21 +56,18 @@ const Stories = () => {
             key={product.id}
             className="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col"
           >
-            {/* Product Image */}
             <div className="relative h-48 w-full overflow-hidden flex items-center justify-center p-4">
               <img
                 src={product.image}
                 alt={product.title}
                 className="max-h-full max-w-full object-contain rounded-md"
-                // Fallback for broken images
                 onError={(e) => {
-                  e.target.onerror = null; // Prevent infinite loop
+                  e.target.onerror = null;
                   e.target.src = `https://placehold.co/150x150/E0E0E0/000000?text=No+Image`;
                 }}
               />
             </div>
 
-            {/* Product Details */}
             <div className="p-4 flex flex-col flex-grow">
               <h2
                 className="text-lg font-semibold text-gray-800 mb-2 truncate"

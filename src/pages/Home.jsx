@@ -1,10 +1,10 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+import Hero from "../components/main/Hero";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="max-[900px]:bg-amber-900">this the hoem page</h1>
+      <Hero />
     </div>
   );
 };
