@@ -6,7 +6,7 @@ import pym from "../../assets/pym.svg";
 import tect from "../../assets/tech.png";
 import crunch from "../../assets/brand1.png";
 
-const App = () => {
+const Featured = () => {
   return (
     <div className="w-full py-12 text-center font-inter px-4 sm:px-6 lg:px-8">
       <h4 className="text-2xl sm:text-3xl font-bold text-[#122231] mb-6">
@@ -85,4 +85,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Featured;

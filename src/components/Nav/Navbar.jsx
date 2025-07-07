@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Icon from "@mdi/react";
 import { mdiChevronDown } from "@mdi/js";
-import { FaBars } from "react-icons/fa"; // hamburger icon
 import SaveNav from "./SaveNav";
 import ResNav from "./ResNav";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import invest from "../../assets/Invest.avif";
 
-const invest = () => {
+const Invest = () => {
   return (
     <div className="w-full py-24 lg:py-48 bg-white font-inter px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col justify-center items-center gap-3 mb-10 text-center">
@@ -51,4 +51,4 @@ const invest = () => {
   );
 };
 
-export default invest;
+export default Invest;
