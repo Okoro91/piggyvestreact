@@ -25,7 +25,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/save" element={<Save />}>
           <Route path="piggybank" element={<Piggybank />} />
           <Route path="safelock" element={<Safelock />} />
