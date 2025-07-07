@@ -3,7 +3,7 @@ import flexnaira from "../../assets/flex-naira.avif";
 import flexdollar from "../../assets/flexdollar-img.avif";
 import housemoney from "../../assets/house-money.png";
 import target from "../../assets/target-saving.avif";
-import invest from "../../assets/Invest.avif";
+import safe from "../../assets/safe.png";
 import piggybank from "../../assets/piggybank.png";
 
 const Savings = () => {
@@ -26,7 +26,7 @@ const Savings = () => {
         "Lock money away for a fixed duration without having access to it until maturity. It's like having a custom fixed deposit.",
       linkText: "Safelock",
       linkHref: "#",
-      imageSrc: "https://placehold.co/250x200/E0E0E0/000000?text=Safelock",
+      imageSrc: { safe },
       titleColor: "text-[#2e9af2]",
       linkColor: "text-[#2e9af2]",
     },
@@ -59,7 +59,7 @@ const Savings = () => {
         "Save and grow your money in foreign currencies such as Dollars.",
       linkText: "Flex Dollar",
       linkHref: "#",
-      imageSrc: "https://placehold.co/250x200/E0E0E0/000000?text=Flex+Dollar",
+      imageSrc: { flexnaira },
       titleColor: "text-[#0c1926]",
       linkColor: "text-[#0c1926]",
     },
@@ -69,7 +69,7 @@ const Savings = () => {
       description: "Plan for your rent and household expenses",
       linkText: "House Money",
       linkHref: "#",
-      imageSrc: "https://placehold.co/250x200/E0E0E0/000000?text=House+Money",
+      imageSrc: { flexdollar },
       titleColor: "text-[#ff773d]",
       linkColor: "text-[#ff773d]",
     },

@@ -1,6 +1,7 @@
 import React from "react";
+import invest from "../../assets/Invest.avif";
 
-const App = () => {
+const invest = () => {
   return (
     <div className="w-full py-24 lg:py-48 bg-white font-inter px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col justify-center items-center gap-3 mb-10 text-center">
@@ -40,7 +41,7 @@ const App = () => {
 
         <div className="invest-card-img w-full lg:w-[450px] relative lg:absolute lg:right-[5%] lg:top-[15%]">
           <img
-            src="https://placehold.co/450x300/E0E0E0/000000?text=Investment+Image"
+            src={invest}
             alt="Investment illustration"
             className="w-full h-auto object-contain rounded-lg shadow-lg"
           />
@@ -50,4 +51,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default invest;

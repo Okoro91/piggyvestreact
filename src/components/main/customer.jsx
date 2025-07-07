@@ -1,6 +1,9 @@
 import React from "react";
+import apple from "../../assets/apple-icon.svg";
+import google from "../../assets/google-icon.svg";
+import customer from "../../assets/customerImg.png";
 
-const App = () => {
+const Customers = () => {
   return (
     <div className="font-inter">
       <div className="flex flex-col justify-center items-center py-10 lg:py-20 w-full px-4 sm:px-6 lg:px-8 bg-white">
@@ -29,7 +32,7 @@ const App = () => {
       <div className="customers w-full py-20 lg:py-36 flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-10 lg:gap-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="customers-img w-full lg:w-[550px] flex-shrink-0">
           <img
-            src="https://placehold.co/550x400/E0E0E0/000000?text=Customer+Image"
+            src={customer}
             alt="Customers using Piggyvest"
             className="w-full h-auto object-contain rounded-lg shadow-md"
           />
@@ -47,7 +50,7 @@ const App = () => {
               className="flex justify-center items-center px-6 py-3 border border-gray-300 rounded-xl font-medium whitespace-nowrap h-[53px] text-base text-[#122231] bg-white hover:bg-gray-100 transition-colors w-full sm:w-auto"
             >
               <img
-                src="https://placehold.co/18x22/E0E0E0/000000?text=Apple"
+                src={apple}
                 alt="Download on Apple App Store"
                 className="w-[18px] h-[22px] mr-2"
               />{" "}
@@ -60,7 +63,7 @@ const App = () => {
               className="flex justify-center items-center px-6 py-3 border border-gray-300 rounded-xl font-medium whitespace-nowrap h-[53px] text-base text-[#122231] bg-white hover:bg-gray-100 transition-colors w-full sm:w-auto"
             >
               <img
-                src="https://placehold.co/18x22/E0E0E0/000000?text=Google"
+                src={google}
                 alt="Get on Google Play"
                 className="w-[18px] h-[22px] mr-2"
               />{" "}
@@ -73,4 +76,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Customers;

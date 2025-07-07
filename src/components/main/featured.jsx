@@ -1,4 +1,10 @@
 import React from "react";
+import cio from "../../assets/cio.svg";
+import fast from "../../assets/fast.svg";
+import cnb from "../../assets/output.png";
+import pym from "../../assets/pym.svg";
+import tect from "../../assets/tech.png";
+import crunch from "../../assets/brand1.png";
 
 const App = () => {
   return (
@@ -14,7 +20,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=TechCabal"
+            src={tect}
             alt="TechCabal logo"
             className="w-32 h-auto object-contain"
           />
@@ -25,7 +31,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=CNBC"
+            src={cnb}
             alt="CNBC logo"
             className="w-32 h-auto object-contain"
           />
@@ -36,7 +42,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=TechCrunch"
+            src={crunch}
             alt="TechCrunch logo"
             className="w-32 h-auto object-contain"
           />
@@ -47,7 +53,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=PYMNTS"
+            src={pym}
             alt="PYMNTS logo"
             className="w-32 h-auto object-contain"
           />
@@ -58,7 +64,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=FastCompany"
+            src={fast}
             alt="Fast Company logo"
             className="w-32 h-auto object-contain"
           />
@@ -69,7 +75,7 @@ const App = () => {
           rel="noreferrer"
         >
           <img
-            src="https://placehold.co/130x50/E0E0E0/000000?text=CIO"
+            src={cio}
             alt="CIO logo"
             className="w-32 h-auto object-contain"
           />
