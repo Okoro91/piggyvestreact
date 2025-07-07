@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Save from "./pages/Save";
@@ -25,9 +30,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/save" element={<Save />}>
-          <Route path="piggybank" element={<Piggybank />} />
+          <Route index element={<Piggybank />} />
           <Route path="safelock" element={<Safelock />} />
           <Route path="target-savings" element={<TargetSavings />} />
           <Route path="naira" element={<Naira />} />
@@ -38,7 +44,7 @@ function App() {
         <Route path="/stories" element={<Stories />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/resources" element={<Resources />}>
-          <Route path="blog" element={<Blog />} />
+          <Route index element={<Blog />} />
           <Route path="reports" element={<Reports />} />
           <Route path="comics" element={<Comics />} />
           <Route path="calculator" element={<Calculator />} />
