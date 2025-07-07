@@ -1,6 +1,12 @@
 import React from "react";
+import flexnaira from "../../assets/flex-naira.avif";
+import flexdollar from "../../assets/flexdollar-img.avif";
+import housemoney from "../../assets/house-money.png";
+import target from "../../assets/target-saving.avif";
+import invest from "../../assets/Invest.avif";
+import piggybank from "../../assets/piggybank.png";
 
-const App = () => {
+const Savings = () => {
   const savingPlans = [
     {
       id: 1,
@@ -9,7 +15,7 @@ const App = () => {
         "Build a dedicated savings faster on your terms, automatically or manually.",
       linkText: "Piggybank",
       linkHref: "#",
-      imageSrc: "https://placehold.co/250x200/E0E0E0/000000?text=Piggybank",
+      imageSrc: { piggybank },
       titleColor: "text-[#003399]",
       linkColor: "text-[#003399]",
     },
@@ -31,8 +37,7 @@ const App = () => {
         "Reach all your savings goals faster. Save towards multiple goals on your own or with a group.",
       linkText: "Target Savings",
       linkHref: "#",
-      imageSrc:
-        "https://placehold.co/250x200/E0E0E0/000000?text=Target+Savings",
+      imageSrc: { target },
       titleColor: "text-[#069c3f]",
       linkColor: "text-[#069c3f]",
     },
@@ -121,4 +126,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Savings;
