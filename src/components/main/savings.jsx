@@ -1,4 +1,3 @@
-import React from "react";
 import flexnaira from "../../assets/flex-naira.avif";
 import flexdollar from "../../assets/flexdollar-img.avif";
 import housemoney from "../../assets/house-money.png";
