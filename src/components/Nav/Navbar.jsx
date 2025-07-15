@@ -15,12 +15,17 @@ const Navbar = () => {
           <NavLink
             to="/save"
             className="text-gray-600 hover:underline text-xl font-medium flex items-center"
-            onMouseOver={() => setSaveOpen(!saveOpen)}
+            onMouseEnter={() => setSaveOpen(true)}
           >
             Save
             <Icon path={mdiChevronDown} size={1} className="inline" />
           </NavLink>
-          {saveOpen && <SaveNav />}
+          {saveOpen && (
+            <SaveNav
+              onMouseLeave={() => setSaveOpen(false)}
+              onClick={() => setSaveOpen(false)}
+            />
+          )}
         </li>
         <li>
           <NavLink
@@ -50,12 +55,17 @@ const Navbar = () => {
           <NavLink
             to="/resources"
             className="text-gray-600 hover:underline text-xl font-medium flex items-center"
-            onMouseOver={() => setResourcesOpen(!resourcesOpen)}
+            onMouseEnter={() => setResourcesOpen(true)}
           >
             Resources
             <Icon path={mdiChevronDown} size={1} className="inline" />
           </NavLink>
-          {resourcesOpen && <ResNav />}
+          {resourcesOpen && (
+            <ResNav
+              onMouseLeave={() => setResourcesOpen(false)}
+              onClick={() => setResourcesOpen(false)}
+            />
+          )}
         </li>
         <li></li>
       </ul>

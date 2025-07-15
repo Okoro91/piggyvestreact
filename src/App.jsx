@@ -34,6 +34,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/save" element={<Save />}>
           <Route index element={<Piggybank />} />
+          <Route path="piggybank" index element={<Piggybank />} />
           <Route path="safelock" element={<Safelock />} />
           <Route path="target-savings" element={<TargetSavings />} />
           <Route path="naira" element={<Naira />} />
@@ -45,6 +46,7 @@ function App() {
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/resources" element={<Resources />}>
           <Route index element={<Blog />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="reports" element={<Reports />} />
           <Route path="comics" element={<Comics />} />
           <Route path="calculator" element={<Calculator />} />

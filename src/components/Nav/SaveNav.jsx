@@ -2,10 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Shield, Lock, Target, Wallet, DollarSign, Home } from "lucide-react";
 
-const SaveNav = () => {
+const SaveNav = (props) => {
   return (
     <>
-      <ul className="absolute -left-55 lg:left-0  shadow-lg  z-10 bg-white rounded-xl  ring-1 ring-black ring-opacity-5 p-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 w-150 mt-2">
+      <ul
+        className="absolute -left-55 lg:left-0  shadow-lg  z-10 bg-white rounded-xl  ring-1 ring-black ring-opacity-5 p-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 w-150 mt-2"
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <li>
           <NavLink
             to="/save/piggybank"

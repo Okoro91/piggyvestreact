@@ -1,4 +1,3 @@
-import React from "react";
 import arrow from "../../assets/arrow-turn-down-right-svgrepo-com.svg";
 import safelock from "../../assets/securitylock.svg";
 

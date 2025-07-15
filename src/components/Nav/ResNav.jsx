@@ -9,10 +9,14 @@ import {
   BookMarked,
 } from "lucide-react";
 
-const ResNav = () => {
+const ResNav = (props) => {
   return (
     <>
-      <ul className="absolute -left-50 w-150 bg-white rounded-xl shadow-lg ring-1 ring-black ring-opacity-5 p-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+      <ul
+        className="absolute -left-50 w-150 bg-white rounded-xl shadow-lg ring-1 ring-black ring-opacity-5 p-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6"
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <li>
           <NavLink
             to="/resources/blog"
