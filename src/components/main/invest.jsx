@@ -1,4 +1,3 @@
-import React from "react";
 import invest from "../../assets/Invest.avif";
 
 const Invest = () => {
