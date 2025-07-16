@@ -2,8 +2,8 @@ import Hero from "../components/main/Hero";
 import Security from "../components/main/Security";
 
 import Invest from "../components/main/Invest";
-import Featured from "../components/main/Featured";
-import Customer from "../components/main/Customer";
+// import Featured from "../components/main/Featured";
+// import Customer from "../components/main/Customer";
 
 const Home = () => {
   return (
@@ -12,8 +12,8 @@ const Home = () => {
       <Security />
 
       <Invest />
-      <Customer />
-      <Featured />
+      {/* <Customer />
+      <Featured /> */}
     </div>
   );
 };
