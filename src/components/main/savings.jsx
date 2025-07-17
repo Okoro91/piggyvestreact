@@ -4,6 +4,7 @@ import housemoney from "../../assets/house-money.png";
 import target from "../../assets/target-saving.avif";
 import safe from "../../assets/safe.png";
 import piggybank from "../../assets/piggybank.png";
+import { CornerDownRight } from "lucide-react";
 
 const Savings = () => {
   const savingPlans = [
@@ -105,8 +106,9 @@ const Savings = () => {
             <div className="card-link absolute bottom-[10%] left-[10%]">
               <a
                 href={plan.linkHref}
-                className={`text-base font-semibold hover:underline ${plan.linkColor}`}
+                className={`text-base font-semibold hover:underline flex gap-3 ${plan.linkColor}`}
               >
+                <CornerDownRight />
                 {plan.linkText}
               </a>
             </div>

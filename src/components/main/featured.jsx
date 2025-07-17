@@ -77,7 +77,7 @@ const Featured = () => {
           <img
             src={cio}
             alt="CIO logo"
-            className="w-32 h-auto object-contain"
+            className="w-18 h-auto object-contain"
           />
         </a>
       </div>

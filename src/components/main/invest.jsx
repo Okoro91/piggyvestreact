@@ -21,7 +21,7 @@ const Invest = () => {
             <h1 className="text-3xl sm:text-4xl font-bold text-white max-w-lg mb-4 mx-auto lg:mx-0">
               Earn Up to 35% returns
             </h1>
-            <p className="text-base sm:text-xl font-normal leading-relaxed mt-4 text-[#fed6f1] max-w-md mx-auto lg:mx-0">
+            <p className="text-base sm:text-xl font-normal leading-relaxed mt-4 w-70 text-[#fed6f1] max-w-md mx-auto lg:mx-0">
               Invest securely and confidently on the go. Grow your money
               confidently by investing in pre-vetted investment opportunities.
             </p>
