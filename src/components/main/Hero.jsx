@@ -1,4 +1,3 @@
-import React from "react";
 import homeImg from "../../assets/home-img.avif";
 import card1 from "../../assets/card-1.png";
 import card2 from "../../assets/card-2.png";
@@ -6,10 +5,11 @@ import card3 from "../../assets/card-3.png";
 import card4 from "../../assets/card-4.png";
 import card5 from "../../assets/card-5.png";
 import card6 from "../../assets/card-6.png";
-import apple from "../../assets/apple-icon.svg";
 import google from "../../assets/google-icon.svg";
 import appleWhite from "../../assets/whiteAppleLogo.svg";
 import safe from "../../assets/safelock.svg";
+import Apple from "../button/Apple";
+import Android from "../button/Android";
 
 const Hero = () => {
   return (
@@ -55,31 +55,8 @@ const Hero = () => {
         </div>
 
         <div className="download-apps flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-5">
-          <a
-            target="_blank"
-            href="https://apps.apple.com/ng/app/piggyvest/id1263117994"
-            className="flex justify-center items-center px-4 py-4 rounded-xl font-semibold whitespace-nowrap h-[53px] text-white bg-[#122231] hover:bg-gray-800 transition-colors w-full sm:w-auto"
-          >
-            <img
-              src={appleWhite}
-              alt="download-apple"
-              className="w-[18px] h-[22px] mr-1"
-            />{" "}
-            Get on iPhone
-          </a>
-
-          <a
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.piggybankng.piggy"
-            className="flex justify-center items-center px-4 py-4 rounded-xl font-semibold whitespace-nowrap h-[53px] text-white bg-[#122231] hover:bg-gray-800 transition-colors w-full sm:w-auto"
-          >
-            <img
-              src={google}
-              alt="download-google"
-              className="w-[18px] h-[22px] mr-1"
-            />
-            Get on Android
-          </a>
+          <Apple />
+          <Android />
         </div>
       </div>
 
