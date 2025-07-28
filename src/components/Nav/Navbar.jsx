@@ -71,7 +71,7 @@ const Navbar = () => {
       </ul>
       <div className="pt-8 space-y-4 lg:flex lg:pt-0 lg:space-y-0">
         <NavLink to="/signin">
-          <button className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors text-lg">
+          <button className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors text-lg text-nowrap">
             Sign in
           </button>
         </NavLink>
